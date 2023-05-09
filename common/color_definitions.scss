@@ -1,3 +1,19 @@
+
+
+$gf-header-bg: dark-light-choose($header_background, $secondary-very-high);
+
+:root {
+  --gf-primary-very-low-or-primary-low: #{dark-light-choose(
+      $primary-very-low,
+      $primary-low
+    )};
+  --gf-header-bg-rgb: #{hexToRGB($gf-header-bg)};
+  --gf-primary-low-or-low-mid: #{dark-light-choose(
+      $primary-low,
+      $primary-low-mid
+    )};
+}
+
 :root {
   --gf-header-bg-rgb: #ffffff;
   --header_background: #ffffff;
@@ -117,18 +133,4 @@
   --gold: rgb(231, 195, 0);
   --silver: #c0c0c0;
   --bronze: #cd7f32;
-}
-
-$gf-header-bg: dark-light-choose($header_background, $secondary-very-high);
-
-:root {
-  --gf-primary-very-low-or-primary-low: #{dark-light-choose(
-      $primary-very-low,
-      $primary-low
-    )};
-  --gf-header-bg-rgb: #{hexToRGB($gf-header-bg)};
-  --gf-primary-low-or-low-mid: #{dark-light-choose(
-      $primary-low,
-      $primary-low-mid
-    )};
 }
