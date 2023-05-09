@@ -270,6 +270,7 @@ pre {
 
 header.d-header {
   @include box-shadow;
+  background-color: #ffffff !important;
   .contents {
     display: flex;
     align-items: center;
