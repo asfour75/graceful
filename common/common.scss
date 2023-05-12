@@ -520,3 +520,11 @@ span.user-title {
 noscript > #main-outlet {
   padding-top: 6em;
 }
+
+.rtl .pull-left {
+  float: right
+}
+
+.rtl .pull-right {
+  float: left
+}
